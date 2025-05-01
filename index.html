@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¡Gana una PC Gamer!</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom right, #111, #222);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      text-align: center;
+      padding: 40px;
+      max-width: 800px;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 3em;
+      color: #00ffff;
+      margin-bottom: 20px;
+      animation: glow 2s infinite alternate;
+    }
+    p {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+      color: #ffcc00;
+    }
+    .pc-img {
+      max-width: 100%;
+      height: auto;
+      border: 5px solid #00ff99;
+      border-radius: 15px;
+      box-shadow: 0 0 25px #00ff99;
+      margin-bottom: 30px;
+    }
+    button {
+      background: #ff0077;
+      border: none;
+      color: white;
+      padding: 20px 40px;
+      font-size: 1.5em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 10px #ff0077;
+    }
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #ff0077;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ffff;
+      }
+      to {
+        text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+      }
+    }
+    .side-img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 150px;
+      height: auto;
+      z-index: 0;
+    }
+    .left-img {
+      left: 0;
+    }
+    .right-img {
+      right: 0;
+    }
+
+    @media (max-width: 900px) {
+      .side-img {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://i.pinimg.com/736x/49/62/ee/4962ee8228258c179a707f7371a08d2b.jpg" alt="Decoración izquierda" class="side-img left-img">
+  <div class="container">
+    <img src="https://i.pinimg.com/736x/a4/6a/d0/a46ad088c58e7c9f92376349b89b68b8.jpg" alt="PC Gamer" class="pc-img">
+    <h1>¡GANA UNA PC GAMER!</h1>
+    <p>Participa en nuestro sorteo exclusivo y llévate esta potente máquina gamer totalmente gratis.<br>¡Solo por tiempo limitado!</p>
+    <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">¡RECLAMAR AHORA!</button>
+  </div>
+  <img src="https://i.pinimg.com/736x/d3/3a/8d/d33a8d3a64a7544df31243b4179a0f79.jpg" alt="Decoración derecha" class="side-img right-img">
+</body>
+</html>
